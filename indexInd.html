@@ -2,34 +2,34 @@
 <!-- Sector Dashboard -->
 <html lang="en">
     <head>
-        <title>Protection Dashboard | Syrian Refugee Response in Jordan</title>
+        <title>Protection Dashboard </title>
         <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
         <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
         <meta content="UNHCR Information management" name="author" />
-        <meta content="Refugee Response in Jordan" property="og:title" />
+        <meta content="Protection Cluster" property="og:title" />
         <meta content="article" property="og:type" />
-        <meta content="http://data.unhcr.org/jordan/response/Protection" property="og:url" />
-        <meta content="http://data.unhcr.org/jordan/images/Protectiondashboard.jpg" property="og:image" />
-        <meta content="Syrian Refugee Response in Jordan" property="og:site_name" />
-        <meta content="Syrian Refugee Response in Jordan" property="og:description" />
+        <meta content="https://github.com/protection-cluster/dashboard-monitoring-template" property="og:url" />
+        <meta content="https://github.com/protection-cluster/dashboard-monitoring-template/images/Protectiondashboard.jpg" property="og:image" />
+        <meta content="Protection Cluster" property="og:site_name" />
+        <meta content="Protection Cluster" property="og:description" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         
         <!-- Bootstrap with Yeti them from bootswatch-->
-        <link rel="stylesheet" href="../../css/bootstrap.min.css" media="screen">
-        <link rel="stylesheet" href="../../css/bootswatch.min.css" type="text/css" >
-        <link rel="stylesheet" href="../../css/font-humanitarian.css" type="text/css" >
-        <link rel="stylesheet" href="../../css/dc.css" type="text/css" />
-        <link href="../../css/dashboard.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="./css/bootswatch.min.css" type="text/css" >
+        <link rel="stylesheet" href="./css/font-humanitarian.css" type="text/css" >
+        <link rel="stylesheet" href="./css/dc.css" type="text/css" />
+        <link href="./css/dashboard.css" rel="stylesheet" type="text/css" />
         
         
         <!-- Add IntroJs styles and JS -->
-        <link href="../../css/introjs.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="../../js/intro.js"></script>
-        <script type="text/javascript" src="../../js/monthlyReport.js"> </script>
-        <script src="../../js/jquery.js"></script>
+        <link href="./css/introjs.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="./js/intro.js"></script>
+        <script type="text/javascript" src="./js/monthlyReport.js"> </script>
+        <script src="./js/jquery.js"></script>
         <!-- map the data to the GeoJSON object -->
-        <script src="../../js/data-jo.js"></script>
-        <link href="../../img/coordination.ico" rel="icon" type="image/x-icon">
+        <script src="./js/data-jo.js"></script>
+        <link href="./img/coordination.ico" rel="icon" type="image/x-icon">
 
         <!-- HTML5 shim, for IE6-8 support of HTML elements--><!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -37,27 +37,6 @@
     </head>
     <body>
         <div class="container-fluid" id="dashboard">
-
-                <!--    Color code for dashboard
-                        '#c00000', /* Education */
-                        '#006600', /* Food Security */
-                        '#7f7f7f', /* NFI */
-                        '#376092', /* Protection */
-                        '#92d050', /* Public Health */
-                        '#215968', /* SCL*/
-                        '#ffc000', /* Shelter */
-                        '#7030a0', /* WASH */
-
-                        Revised Color code for dashboard 2015
-                        '#d44e5b', /* Education */
-                        '#00b26b', /* Food Security */
-                        '#58595b', /* basic needs */
-                        '#33a3dc', /* Protection */
-                        '#9ecf7c', /* Health */
-                        '#febd3b', /* Shelter */
-                        '#766aab', /* WASH */
-
-                        -->
 
             <div class="row" style="background-color: #33a3dc; color: #ffffff">
                 <div class="col-md-1">
@@ -67,10 +46,10 @@
                 </div>
                 <div class="col-md-7">
                    <!-- <center> </center> -->
-                        <h3><strong>Protection Working Group | 2015 Syrian Refugee Response in Jordan
-                         | <a href="../../index.html"  target="_blank"><i class="icon-im-coord" style="color:white; font-size:20px;" ></i></a></strong></h3>
-                        The data presented here are collected through the <a href="https://www.syrianrefugeeresponse.org/" target="_blank">Syrian Refugee Response</a> platform and then cleared by Sector focal points.
-                        You can donwload the <a href="data.csv" target="_blank">data here</a>. More info on jordan <a href="http://data.unhcr.org/jordan" target="_blank">here</a>.<br />
+                        <h3><strong>Protection Working Group 
+                         | <a href="index.html"  target="_blank"><i class="icon-im-coord" style="color:white; font-size:20px;" ></i></a></strong></h3>
+                        The data presented here are  cleared by Sector focal points.
+                        You can donwload the <a href="./data/data.csv" target="_blank">data here</a>.<br />
                         <strong>The following charts shows the achievement of the Protection sector. Click on any of the graphs below to filter and slice the data.</strong>
                         <p>The units displayed here corresponds to "Assistance Instance". As such totals presented here should be analysed with caution. </p>
                 </div>
@@ -80,22 +59,24 @@
                             <table width = "100%">
                               <tbody>
                                   <tr>
-                                    <td valign="middle"><a href="http://www.facebook.com/sharer.php?u=http://data.unhcr.org/jordan/sectors/shelter" target="_blank">
-                                        <img src="../../img/Facebook.png" style="height: 25px; width: 25px"></a></td>
-                                    <td valign="middle"><a href="https://twitter.com/intent/tweet?url=http://data.unhcr.org/jordan/sectors/shelter&amp;text=%23jordan%20@Refugees" target="_blank">
-                                        <img src="../../img/Twitter.png" style="height: 25px; width: 25px"></a></td>
-                                    <td valign="middle"><a href="https://plus.google.com/share?&amp;hl=en&amp;url=http://data.unhcr.org/jordan/sectors/shelter" target="_blank">
-                                        <img src="../../img/Google.png" style="height: 25px; width: 25px"></a></td>
+                                    <td valign="middle"><a href="http://www.facebook.com/sharer.php?u=https://github.com/protection-cluster/dashboard-monitoring-template" target="_blank">
+                                        <img src="./img/Facebook.png" style="height: 25px; width: 25px"></a></td>
+                                    <td valign="middle"><a href="https://twitter.com/intent/tweet?url=https://github.com/protection-cluster/dashboard-monitoring-template&amp;text=%23cluster" target="_blank">
+                                        <img src="./img/Twitter.png" style="height: 25px; width: 25px"></a></td>
+                                    <td valign="middle"><a href="https://plus.google.com/share?&amp;hl=en&amp;url=https://github.com/protection-cluster/dashboard-monitoring-template" target="_blank">
+                                        <img src="./img/Google.png" style="height: 25px; width: 25px"></a></td>
                                   </tr>
                             </tbody></table><br>
                         </div>
                     </div>
                     <div class="row" >
                             <p>
-                               <b>Leading Agencies:</b> <i>UNHCR</i> <a href="mailto:whiting@unhcr.org">Karen Whiting</a> & <i>DRC</i> <a href="mailto:Jennifer.Gulbrandson@drc-jordan.org">Jennifer Gulbrandson</a><br>
-                                <small>The Protection Sector includes the following sub-sectors: Child Protection (UNHCR/UNICEF) <a href="mailto:blanc@unhcr.org"> Bertrand Blanc </a> / <a href="mailto:mrkhan@unicef.org"> Muhammad Rafiq Khan</a>
-                                     SGBV (UNHCR/UNFPA)  <a href="mailto:anguita@unhcr.org"> Ana Belen Anguita Arjona </a> / <a href="mailto:falcione@unfpa.org"> Fabrizia Falcione</a>  and Mental Health and Psychosocial Support (IMC/WHO)
-                                     <a href="mailto:abawaneh@internationalmedicalcorps.org"> Ahmad Bawaneh </a> / <a href="mailto:alfarh@who.int"> Hadeel Al Far </a>.
+                               <b>Leading Agencies:</b> <i>UNHCR</i> <a href="mailto:Name@unhcr.org"> Name  </a> &
+													    <i>Name</i> <a href="mailto:Name@Name.org"> Name  </a><br>
+                                <small>The Protection Sector includes the following sub-sectors: 
+								     Child Protection  <a href="mailto:Name@Name.org"> Name  </a> - 
+                                     SGBV <a href="mailto:Name@Name.org"> Name  </a>  - 
+									 Mental Health and Psychosocial Support <a href="mailto:Name@Name.org"> Name  </a>
                                      </small> </p>
 
                             </p>
@@ -246,7 +227,7 @@
                 </div>
             </div>
             <div class="row" style="background-color: #D8D8D8;">
-                <iframe src="../../timeline/protection/timeline.html" width="100%" height="800" frameborder="0" scrolling="no" marginheight="10" marginwidth="10"></iframe>
+                <iframe src="timeline/protection/timeline.html" width="100%" height="800" frameborder="0" scrolling="no" marginheight="10" marginwidth="10"></iframe>
             </div>
 
             <div class="row" style="background-color: #33a3dc; color: #00000">
@@ -258,12 +239,12 @@
             </div>
 
             </div>
-            <script type="text/javascript" src="../../js/d3_002.js">
-            </script><!--script type="text/javascript" src="../../js/d3.v3.js"></script -->
-            <script type="text/javascript" src="../../js/crossfilter.js"></script>
-            <script type="text/javascript" src="../../js/dc.js"></script>
-            <script type="text/javascript" src="../../js/d3.js"></script>
-            <script type="text/javascript" src="../../js/indicator.js"></script>			
+            <script type="text/javascript" src="js/d3_002.js">
+            </script><!--script type="text/javascript" src="js/d3.v3.js"></script -->
+            <script type="text/javascript" src="./js/crossfilter.js"></script>
+            <script type="text/javascript" src="./js/dc.js"></script>
+            <script type="text/javascript" src="./js/d3.js"></script>
+            <script type="text/javascript" src="./js/indicator.js"></script>			
             <script>
         // loading screen code
         $(window).load(function() {
@@ -279,7 +260,7 @@
                                 .attr("height", height)
                                 .style("stroke-width", "0")
                                 .style("stroke", "grey");
-                    d3.json("../../data/admin1.geojson", function(json) {
+                    d3.json("./data/admin1.geojson", function(json) {
                         var center = d3.geo.centroid(json)
                         var scale  = 150;
                         var offset = [width/2, height/2];
@@ -354,7 +335,7 @@
                        }
                    }
 
-                d3.csv("dataind.csv", function(error, dataset) {
+                d3.csv("./data/dataind.csv", function(error, dataset) {
 
                 var dateFormat = d3.time.format("%d/%m/%Y");
                 var numberFormat = d3.format(",f");
@@ -636,7 +617,7 @@
                 });
             </script>
 
-            <script src="../../js/bootstrap.js"></script>
+            <script src="./js/bootstrap.js"></script>
 
 
             <script>
